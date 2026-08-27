@@ -1,0 +1,9 @@
+Social links added to src/app/page.tsx
+
+YouTube:
+https://www.youtube.com/channel/UCEbOnb8Z5ns2CJciybcX3kQ
+
+Instagram:
+https://www.instagram.com/shivgurukulpublicschool/
+
+Note: the Instagram profile URL was not independently verified; if the school's actual Instagram URL is different, replace only that href.
