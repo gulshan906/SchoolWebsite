@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 type Teacher = {
@@ -45,7 +46,7 @@ const teachers: Teacher[] = [
     experience: "4+ Years of Teaching Experience",
     subject: "Computer Lab",
     message:
-      "Technology is not just a subject to learnâ€”it is a skill that empowers students to explore, create, and shape their future. My aim is to make every Computer Lab session practical, engaging, and easy to understand. Through hands-on learning and continuous guidance, I encourage students to become confident, creative, and responsible users of technology. I believe that when students learn by doing, they not only gain technical skills but also develop the confidence to face the challenges of tomorrow.",
+      "Technology is not just a subject to learnÃ¢â‚¬â€it is a skill that empowers students to explore, create, and shape their future. My aim is to make every Computer Lab session practical, engaging, and easy to understand. Through hands-on learning and continuous guidance, I encourage students to become confident, creative, and responsible users of technology. I believe that when students learn by doing, they not only gain technical skills but also develop the confidence to face the challenges of tomorrow.",
   },
 
   {
@@ -145,7 +146,7 @@ function TeacherImage({
 
       <img
         src={src}
-        alt={name}
+        alt=""
         className="absolute inset-0 h-full w-full object-cover object-top"
         onError={(event) => {
           event.currentTarget.style.display = "none";
@@ -166,7 +167,7 @@ function TeacherImage({
         className="absolute inset-0 hidden items-center justify-center bg-gradient-to-br from-blue-50 via-white to-slate-100"
       >
         <div className="text-center">
-          <div className="text-5xl">ðŸ‘¨â€ðŸ«</div>
+          <div className="text-2xl font-black text-slate-300">FACULTY</div>
 
           <p className="mt-3 text-xs font-black uppercase tracking-wider text-slate-400">
             Faculty Photo
@@ -215,7 +216,7 @@ export default function TeachersPage() {
             href="/"
             className="w-fit rounded-full bg-blue-700 px-6 py-3 text-sm font-black text-white transition hover:bg-blue-800"
           >
-            â† Back Home
+            Ã¢â€ Â Back Home
           </Link>
 
         </div>
@@ -298,7 +299,7 @@ export default function TeachersPage() {
                   <div className="flex items-center gap-2">
 
                     <span className="text-lg">
-                      ðŸ’¬
+                      Ã°Å¸â€™Â¬
                     </span>
 
                     <p className="text-[10px] font-black uppercase tracking-wider text-slate-400">
@@ -325,4 +326,5 @@ export default function TeachersPage() {
     </main>
   );
 }
+
 

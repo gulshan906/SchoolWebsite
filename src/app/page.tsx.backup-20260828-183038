@@ -67,7 +67,7 @@ const teachers = [
     experience: "4+ Years of Teaching Experience",
     subject: "Computer Lab",
     message:
-      "Technology is not just a subject to learn&mdash;it is a skill that empowers students to explore, create, and shape their future. My aim is to make every Computer Lab session practical, engaging, and easy to understand. Through hands-on learning and continuous guidance, I encourage students to become confident, creative, and responsible users of technology. I believe that when students learn by doing, they not only gain technical skills but also develop the confidence to face the challenges of tomorrow.",
+      "Technology is not just a subject to learn—it is a skill that empowers students to explore, create, and shape their future. My aim is to make every Computer Lab session practical, engaging, and easy to understand. Through hands-on learning and continuous guidance, I encourage students to become confident, creative, and responsible users of technology. I believe that when students learn by doing, they not only gain technical skills but also develop the confidence to face the challenges of tomorrow.",
     photo: "/images/teachers/teacher-3.jpg",
   },
 ];
@@ -109,7 +109,7 @@ function ImageBox({
   src,
   alt,
   className = "",
-  icon = "",
+  icon = "📷",
 }: {
   src: string;
   alt: string;
@@ -198,7 +198,7 @@ export default function Home() {
 
       {/* ================= TOP BAR ================= */}
       <div className="bg-slate-950 px-4 py-2 text-center text-xs font-bold text-white">
-         Welcome to Shiv Gurukul Public School &bull; Established 2015
+        🎓 Welcome to Shiv Gurukul Public School • Established 2015
       </div>
 
       {/* ================= HEADER ================= */}
@@ -272,17 +272,9 @@ export default function Home() {
           <button
             type="button"
             onClick={() => setMobileMenu(!mobileMenu)}
-            style={{
-            backgroundColor: "#1d4ed8",
-            color: "#ffffff",
-            borderColor: "#1d4ed8",
-            }}
-            className="ml-auto flex h-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white px-4 text-base font-bold text-slate-900 shadow-sm lg:hiddenml-auto flex h-11 shrink-0 items-center justify-center rounded-xl bg-blue-700 px-4 text-base font-bold text-white shadow-sm transition hover:bg-blue-800 lg:hiddenml-auto flex h-11 shrink-0 items-center justify-center rounded-xl bg-blue-700 px-4 text-base font-bold text-white shadow-sm transition hover:bg-blue-800 lg:hiddenml-auto flex h-11 shrink-0 items-center justify-center rounded-xl bg-blue-700 px-4 text-base font-bold text-white shadow-sm transition hover:bg-blue-800 lg:hidden"
-              aria-expanded={mobileMenu}
-              aria-label={mobileMenu ? "Close menu" : "Open menu"}
-
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-xl lg:hidden"
           >
-            {mobileMenu ? "X" : "Menu"}
+            {mobileMenu ? "✕" : "☰"}
           </button>
 
         </div>
@@ -294,31 +286,31 @@ export default function Home() {
             <div className="flex flex-col gap-1">
 
               <Link href="/" className="rounded-xl px-4 py-3 font-bold">
-                Home
+                🏠 Home
               </Link>
 
               <Link href="/academics" className="rounded-xl px-4 py-3 font-bold">
-                 Academics
+                📚 Academics
               </Link>
 
               <Link href="/facilities" className="rounded-xl px-4 py-3 font-bold">
-                 Facilities
+                🏢 Facilities
               </Link>
 
               <Link href="/gallery" className="rounded-xl px-4 py-3 font-bold">
-                 Gallery
+                🖼️ Gallery
               </Link>
 
               <Link href="/examination" className="rounded-xl px-4 py-3 font-bold">
-                 Examination
+                📝 Examination
               </Link>
 
               <Link href="/admissions" className="rounded-xl px-4 py-3 font-bold">
-                 Admissions
+                🎓 Admissions
               </Link>
 
               <Link href="/contact" className="rounded-xl px-4 py-3 font-bold">
-                 Contact
+                📞 Contact
               </Link>
 
             </div>
@@ -340,7 +332,7 @@ export default function Home() {
               <ImageBox
                 src={sliderItems[currentSlide].image}
                 alt={sliderItems[currentSlide].title}
-                icon=""
+                icon="🏫"
                 className="absolute inset-0 h-full w-full"
               />
 
@@ -351,7 +343,7 @@ export default function Home() {
                 onClick={previousSlide}
                 className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl font-black shadow-lg"
               >
-                &larr;
+                ←
               </button>
 
               <button
@@ -359,7 +351,7 @@ export default function Home() {
                 onClick={nextSlide}
                 className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl font-black shadow-lg"
               >
-                &rarr;
+                →
               </button>
 
               <div className="absolute bottom-10 left-6 right-6 text-white sm:left-10 lg:left-14">
@@ -453,7 +445,7 @@ export default function Home() {
               </p>
 
               <p>
-                For us, education is not only about achieving good marks&mdash;it
+                For us, education is not only about achieving good marks—it
                 is about developing knowledge, character, confidence,
                 communication skills, and a positive attitude towards life.
               </p>
@@ -465,24 +457,24 @@ export default function Home() {
               <ImageBox
                 src="/images/school/building.jpg"
                 alt="School Building"
-                icon=""
+                icon="🏫"
                 className="aspect-square rounded-3xl"
               />
 
               <ImageBox
                 src="/images/school/classroom.jpg"
                 alt="School Classroom"
-                icon=""
+                icon="📚"
                 className="mt-8 aspect-square rounded-3xl"
               />
 
               <div className="-mt-8 flex aspect-square items-center justify-center rounded-3xl bg-slate-950 p-5 text-center text-white">
 
                 <div>
-                  <div className="text-4xl"></div>
+                  <div className="text-4xl">🎓</div>
 
                   <p className="mt-3 font-black">
-                    Classes 1&ndash;10
+                    Classes 1–10
                   </p>
 
                   <p className="mt-1 text-xs text-slate-400">
@@ -495,14 +487,14 @@ export default function Home() {
               <div className="flex aspect-square items-center justify-center rounded-3xl bg-blue-50 p-5 text-center">
 
                 <div>
-                  <div className="text-4xl"></div>
+                  <div className="text-4xl">🌱</div>
 
                   <p className="mt-3 font-black">
                     Holistic Development
                   </p>
 
                   <p className="mt-1 text-xs text-slate-500">
-                    Knowledge &bull; Values &bull; Confidence
+                    Knowledge • Values • Confidence
                   </p>
                 </div>
 
@@ -528,11 +520,11 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-2 text-2xl font-black sm:text-3xl">
-                  Learn &bull; Grow &bull; Shine
+                  Learn • Grow • Shine
                 </h3>
 
                 <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Classes 1&ndash;10 | CBSE Curriculum | English Medium |
+                  Classes 1–10 | CBSE Curriculum | English Medium |
                   Co-Educational School | Holistic Development
                 </p>
 
@@ -578,7 +570,7 @@ export default function Home() {
                   <ImageBox
                     src="/images/director/director.jpg"
                     alt="Director Shiv Kumar Singh"
-                    icon=""
+                    icon="👨‍💼"
                     className="mx-auto aspect-[3/4] w-32 rounded-2xl border-4 border-white shadow-lg sm:w-36"
                   />
 
@@ -674,7 +666,7 @@ export default function Home() {
                     >
 
                       <span className="mt-1 shrink-0 text-lg font-black text-cyan-500">
-                        &rsaquo;
+                        ›
                       </span>
 
                       <p className="text-sm leading-6 text-slate-700">
@@ -733,7 +725,7 @@ export default function Home() {
               href="/teachers"
               className="rounded-full bg-blue-700 px-6 py-3 text-center text-sm font-black text-white"
             >
-              View All Faculty &rarr;
+              View All Faculty →
             </Link>
 
           </div>
@@ -751,7 +743,7 @@ export default function Home() {
                   <ImageBox
                     src={teacher.photo}
                     alt={teacher.name}
-                    icon=""
+                    icon="👨‍🏫"
                     className="aspect-[3/4] w-32 rounded-2xl border-4 border-white shadow-lg sm:w-36"
                   />
 
@@ -908,7 +900,7 @@ export default function Home() {
               href="/admissions"
               className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-black text-blue-800 shadow-md hover:bg-blue-50"
             >
-               View Admission Details &rarr;
+              📝 View Admission Details →
             </Link>
 
           </div>
@@ -1009,7 +1001,7 @@ export default function Home() {
                 href="tel:9631857371"
                 className="rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10"
               >
-                <div className="text-2xl"></div>
+                <div className="text-2xl">📞</div>
 
                 <p className="mt-3 text-[10px] font-black uppercase tracking-wider text-slate-500">
                   School Phone
@@ -1026,7 +1018,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10"
               >
-                <div className="text-2xl"></div>
+                <div className="text-2xl">💬</div>
 
                 <p className="mt-3 text-[10px] font-black uppercase tracking-wider text-slate-500">
                   WhatsApp
@@ -1041,7 +1033,7 @@ export default function Home() {
                 href="mailto:shivgurukulpublicschool@gmail.com"
                 className="rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10"
               >
-                <div className="text-2xl"></div>
+                <div className="text-2xl">✉️</div>
 
                 <p className="mt-3 text-[10px] font-black uppercase tracking-wider text-slate-500">
                   School Email
@@ -1054,64 +1046,23 @@ export default function Home() {
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
 
-                <div className="text-2xl"></div>
+                <div className="text-2xl">⏰</div>
 
                 <p className="mt-3 text-[10px] font-black uppercase tracking-wider text-slate-500">
                   School Timing
                 </p>
 
                 <p className="mt-1 font-black">
-                  8:00 AM &ndash; 2:00 PM
+                  8:00 AM – 2:00 PM
                 </p>
 
                 <p className="mt-1 text-xs text-slate-500">
-                  Monday &ndash; Saturday
+                  Monday – Saturday
                 </p>
 
               </div>
 
             </div>
-
-          </div>
-
-          {/* ================= SOCIAL LINKS ================= */}
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-
-            <a
-              href="https://www.instagram.com/shivgurukulpublicschool_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group rounded-2xl border border-pink-400/20 bg-white/5 p-5 transition hover:-translate-y-1 hover:bg-pink-500/10"
-            >
-              <p className="text-[10px] font-black uppercase tracking-wider text-pink-300">
-                Follow Us
-              </p>
-              <h3 className="mt-2 text-xl font-black">Instagram</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-400">
-                Follow Shiv Gurukul Public School for school updates, events and campus moments.
-              </p>
-              <span className="mt-4 inline-flex rounded-full border border-pink-400/30 px-4 py-2 text-xs font-black text-pink-300 transition group-hover:bg-pink-500 group-hover:text-white">
-                Visit Instagram &rarr;
-              </span>
-            </a>
-
-            <a
-              href="https://youtube.com/@shivsagar119?si=buWd994AV8wszcVV"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group rounded-2xl border border-red-400/20 bg-white/5 p-5 transition hover:-translate-y-1 hover:bg-red-500/10"
-            >
-              <p className="text-[10px] font-black uppercase tracking-wider text-red-300">
-                Watch Us
-              </p>
-              <h3 className="mt-2 text-xl font-black">YouTube</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-400">
-                Watch school videos, events and memorable moments on our YouTube channel.
-              </p>
-              <span className="mt-4 inline-flex rounded-full border border-red-400/30 px-4 py-2 text-xs font-black text-red-300 transition group-hover:bg-red-500 group-hover:text-white">
-                Visit YouTube &rarr;
-              </span>
-            </a>
 
           </div>
 
@@ -1122,7 +1073,7 @@ export default function Home() {
             </p>
 
             <p className="mt-1 text-sm font-bold text-slate-200">
-              Mangobandar, Khaira, Jamui, Bihar &ndash; 811305
+              Mangobandar, Khaira, Jamui, Bihar – 811305
             </p>
 
           </div>
@@ -1153,7 +1104,7 @@ export default function Home() {
                   </p>
 
                   <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-slate-500">
-                    Learn &bull; Grow &bull; Shine
+                    Learn • Grow • Shine
                   </p>
 
                 </div>
@@ -1199,18 +1150,18 @@ export default function Home() {
               <div className="mt-4 space-y-3 text-sm text-slate-400">
 
                 <p>
-                   Mangobandar, Khaira, Jamui, Bihar &ndash; 811305
+                  📍 Mangobandar, Khaira, Jamui, Bihar – 811305
                 </p>
 
                 <a href="tel:9631857371" className="block">
-                   9631857371
+                  📞 9631857371
                 </a>
 
                 <a
                   href="mailto:shivgurukulpublicschool@gmail.com"
                   className="block break-all"
                 >
-                   shivgurukulpublicschool@gmail.com
+                  ✉️ shivgurukulpublicschool@gmail.com
                 </a>
 
               </div>
@@ -1220,7 +1171,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 border-t border-white/10 pt-5 text-center text-xs text-slate-600">
-            &copy; 2026 Shiv Gurukul Public School. All Rights Reserved.
+            © 2026 Shiv Gurukul Public School. All Rights Reserved.
           </div>
 
         </div>
@@ -1236,7 +1187,7 @@ export default function Home() {
             href="tel:9631857371"
             className="rounded-xl bg-slate-100 px-2 py-3 text-center text-[11px] font-black"
           >
-              📞Call
+            📞 Call
           </a>
 
           <a
@@ -1245,14 +1196,14 @@ export default function Home() {
             rel="noreferrer"
             className="rounded-xl bg-green-50 px-2 py-3 text-center text-[11px] font-black text-green-700"
           >
-             💬WhatsApp
+            💬 WhatsApp
           </a>
 
           <Link
             href="/admissions"
             className="rounded-xl bg-blue-700 px-2 py-3 text-center text-[11px] font-black text-white"
           >
-             📝Admission
+            📝 Admission
           </Link>
 
         </div>
@@ -1303,6 +1254,5 @@ export default function Home() {
     </main>
   );
 }
-
 
 

@@ -74,32 +74,32 @@ const teachers = [
 
 const reasons = [
   {
-    icon: "🎓",
+    icon: "",
     title: "Quality Education",
     text: "Strong academic foundations for lifelong learning and success.",
   },
   {
-    icon: "👨‍🏫",
+    icon: "",
     title: "Dedicated Teachers",
     text: "Teachers who guide and support every learner with care.",
   },
   {
-    icon: "🧠",
+    icon: "",
     title: "Smart Learning",
     text: "Encouraging curiosity, creativity and critical thinking.",
   },
   {
-    icon: "🛡️",
+    icon: "",
     title: "Safe Environment",
     text: "A caring, disciplined and positive environment for children.",
   },
   {
-    icon: "⚽",
+    icon: "",
     title: "Activities & Sports",
     text: "Opportunities to participate, learn and develop confidence.",
   },
   {
-    icon: "🌱",
+    icon: "",
     title: "Holistic Growth",
     text: "Developing knowledge, character, communication and values.",
   },
@@ -272,15 +272,7 @@ export default function Home() {
           <button
             type="button"
             onClick={() => setMobileMenu(!mobileMenu)}
-            style={{
-            backgroundColor: "#1d4ed8",
-            color: "#ffffff",
-            borderColor: "#1d4ed8",
-            }}
-            className="ml-auto flex h-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white px-4 text-base font-bold text-slate-900 shadow-sm lg:hiddenml-auto flex h-11 shrink-0 items-center justify-center rounded-xl bg-blue-700 px-4 text-base font-bold text-white shadow-sm transition hover:bg-blue-800 lg:hiddenml-auto flex h-11 shrink-0 items-center justify-center rounded-xl bg-blue-700 px-4 text-base font-bold text-white shadow-sm transition hover:bg-blue-800 lg:hiddenml-auto flex h-11 shrink-0 items-center justify-center rounded-xl bg-blue-700 px-4 text-base font-bold text-white shadow-sm transition hover:bg-blue-800 lg:hidden"
-              aria-expanded={mobileMenu}
-              aria-label={mobileMenu ? "Close menu" : "Open menu"}
-
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-xl lg:hidden"
           >
             {mobileMenu ? "X" : "Menu"}
           </button>
@@ -932,7 +924,7 @@ export default function Home() {
               href="tel:9631857371"
               className="flex items-center justify-center gap-2 border-b border-slate-200 px-4 py-5 text-sm font-black transition hover:bg-slate-50 sm:border-b-0 sm:border-r"
             >
-              <span className="text-xl">📞</span>
+              <span className="text-xl"></span>
               <span>Call Us</span>
             </a>
 
@@ -943,7 +935,7 @@ export default function Home() {
               rel="noreferrer"
               className="flex items-center justify-center gap-2 border-b border-slate-200 px-4 py-5 text-sm font-black transition hover:bg-green-50 sm:border-b-0 sm:border-r"
             >
-              <span className="text-xl">💬</span>
+              <span className="text-xl"></span>
               <span>WhatsApp</span>
             </a>
 
@@ -954,7 +946,7 @@ export default function Home() {
               rel="noreferrer"
               className="flex items-center justify-center gap-2 border-b border-slate-200 px-4 py-5 text-sm font-black transition hover:bg-blue-50 sm:border-b-0 sm:border-r"
             >
-              <span className="text-xl">📍</span>
+              <span className="text-xl"></span>
               <span>Directions</span>
             </a>
 
@@ -963,7 +955,7 @@ export default function Home() {
               href="/admissions"
               className="flex items-center justify-center gap-2 px-4 py-5 text-sm font-black transition hover:bg-blue-50"
             >
-              <span className="text-xl">📝</span>
+              <span className="text-xl"></span>
               <span>Admissions</span>
             </Link>
 
@@ -1236,7 +1228,7 @@ export default function Home() {
             href="tel:9631857371"
             className="rounded-xl bg-slate-100 px-2 py-3 text-center text-[11px] font-black"
           >
-              📞Call
+             Call
           </a>
 
           <a
@@ -1245,14 +1237,14 @@ export default function Home() {
             rel="noreferrer"
             className="rounded-xl bg-green-50 px-2 py-3 text-center text-[11px] font-black text-green-700"
           >
-             💬WhatsApp
+             WhatsApp
           </a>
 
           <Link
             href="/admissions"
             className="rounded-xl bg-blue-700 px-2 py-3 text-center text-[11px] font-black text-white"
           >
-             📝Admission
+             Admission
           </Link>
 
         </div>
