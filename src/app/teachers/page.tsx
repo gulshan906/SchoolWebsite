@@ -216,7 +216,7 @@ export default function TeachersPage() {
             href="/"
             className="w-fit rounded-full bg-blue-700 px-6 py-3 text-sm font-black text-white transition hover:bg-blue-800"
           >
-            Ã¢â€ Â Back Home
+            ← Back Home
           </Link>
 
         </div>
@@ -299,7 +299,7 @@ export default function TeachersPage() {
                   <div className="flex items-center gap-2">
 
                     <span className="text-lg">
-                      Ã°Å¸â€™Â¬
+                      💬
                     </span>
 
                     <p className="text-[10px] font-black uppercase tracking-wider text-slate-400">
